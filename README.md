@@ -40,6 +40,5 @@ _A set of useful redis DB and redisinsight web UI tools to work with redis_
 
 _Mostly used celery broker_
 
-* **needs a `data` directory to persist data**
 * [**See yml file**](./RabbitMQ/docker-compose.yml)
 
