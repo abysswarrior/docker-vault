@@ -10,24 +10,3 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: your_username
       RABBITMQ_DEFAULT_PASS: your_password
-
-version: '3.7'
-services:
-  redis:
-    image: redis:latest
-    ports:
-      - 6379:6379
-    networks:
-      - "app-network"
-  redisinsight:
-    image: redislabs/redisinsight:latest
-    ports:
-      - 8001:8001
-    networks:
-      - "app-network"
-    depends_on:
-      - redis
-
-networks:
-  app-network:
-    external: true
